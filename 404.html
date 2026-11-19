@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Momentum 我的商場</title>
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <link rel="icon" href="/favicon.ico"/><link rel="preload" href="/_expo/static/css/native-tabs.module-1624a8f8f70db8e8d74a25c6214b413a.css" as="style">
+<link rel="stylesheet" href="/_expo/static/css/native-tabs.module-1624a8f8f70db8e8d74a25c6214b413a.css"></head>
+
+  <body>
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <style id="momentum-loader-style">#momentum-loading-screen{position:fixed; inset:0; z-index:2147483000; display:flex; align-items:center; justify-content:center; background:#FEF7FA; color:#5A4A52; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; transition:opacity .32s ease, visibility .32s ease}#momentum-loading-screen.is-hidden{opacity:0; visibility:hidden; pointer-events:none}.momentum-loader-inner{width:min(340px,90vw); text-align:center}.momentum-loader-heart{width:72px; height:72px; margin:0 auto 18px; animation:momentum-heartbeat 1.8s ease-in-out infinite}.momentum-loader-heart svg{display:block; width:72px; height:72px}.momentum-loader-dogs{display:grid; grid-template-columns:repeat(7,1fr); gap:2px 6px; max-width:320px; margin:0 auto 14px; align-items:center}.loader-dog{display:block; width:40px; max-height:56px; height:auto; justify-self:center; object-fit:contain; will-change:transform,opacity; backface-visibility:hidden; transition:opacity .12s ease-in-out; animation:momentum-dog-bounce 1.8s ease-in-out infinite; animation-delay:var(--delay)}.momentum-loader-label{font-size:14px; font-weight:700; letter-spacing:.16em}.momentum-loader-dots:after{display:inline-block; width:18px; text-align:left; animation:momentum-dots 1.2s steps(4,end) infinite; content:""}.momentum-loader-note{font-size:11px; margin-top:6px; color:#947d8c}@keyframes momentum-heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.3)}}@keyframes momentum-dog-bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}@keyframes momentum-dots{0%{content:""}25%{content:"."}50%{content:".."}75%{content:"..."}}</style><div id="momentum-loading-screen"><div class="momentum-loader-inner"><div class="momentum-loader-heart"><svg viewBox="0 0 48 48" width="56" height="56" aria-hidden="true"><path d="M24 40 7.8 24.2C-1 14.8 5.1 5 14.4 5c4.2 0 7.5 2.1 9.6 5.2C26.1 7.1 29.4 5 33.6 5 42.9 5 49 14.8 40.2 24.2L24 40Z" fill="#E883A9"/></svg></div><div class="momentum-loader-dogs"><img class="loader-dog" src="dogs-expressions-loader/media-generation-huahua-smile-0-b3918998-2cff-4127-9ca7-d5075d0cf14b-nobg.webp" data-frames="dogs-expressions-loader/media-generation-huahua-smile-0-b3918998-2cff-4127-9ca7-d5075d0cf14b-nobg.webp|dogs-expressions-loader/media-generation-huahua-wink-v2-0-1adeb012-6948-49b4-8afa-0a583d630784-nobg.webp|dogs-expressions-loader/media-generation-huahua-tongue-v2-0-2a767f28-905a-447d-be4b-d97d2f8ab89e-nobg.webp|dogs-expressions-loader/media-generation-huahua-closed-eyes-v2-0-a60d1564-416c-4631-8754-889436872b46-nobg.webp" alt="花花" draggable="false" style="--delay:0ms"><img class="loader-dog" src="dogs-expressions-loader/media-generation-naixi-smile-pinkcheeks-0-c18c1de5-f56c-4726-ae8b-aca12db2790b-nobg.webp" data-frames="dogs-expressions-loader/media-generation-naixi-smile-pinkcheeks-0-c18c1de5-f56c-4726-ae8b-aca12db2790b-nobg.webp|dogs-expressions-loader/media-generation-naixi-wink-0-e49e8674-9403-4f90-afe2-8bc5539be251-nobg.webp|dogs-expressions-loader/media-generation-naixi-tongue-0-55887577-ee5d-44a7-b948-63ef128ff73a-nobg.webp|dogs-expressions-loader/media-generation-naixi-closed-eyes-0-a199577e-d416-44bc-bd9e-8bef86e9302f-nobg.webp" alt="奶昔" draggable="false" style="--delay:-129ms"><img class="loader-dog" src="dogs-expressions-loader/media-generation-xiaoniu-smile-v1style-0-cd78130a-5205-4b6c-9404-b7f6de7ed02a-nobg.webp" data-frames="dogs-expressions-loader/media-generation-xiaoniu-smile-v1style-0-cd78130a-5205-4b6c-9404-b7f6de7ed02a-nobg.webp|dogs-expressions-loader/media-generation-xiaoniu-wink-0-678211a7-49b1-4d87-a65c-5cc813c04d6a-nobg.webp|dogs-expressions-loader/media-generation-xiaoniu-tongue-0-40140437-9256-4909-83ef-f44c4552ff70-nobg.webp|dogs-expressions-loader/media-generation-xiaoniu-closed-eyes-0-3d62fee1-4f90-4ba7-9f21-03db4faae1eb-nobg.webp" alt="小牛" draggable="false" style="--delay:-258ms"><img class="loader-dog" src="dogs-expressions-loader/media-generation-buding-smile-v1style-0-09364d5e-f8ed-41ce-8eee-164ef5479b77-nobg.webp" data-frames="dogs-expressions-loader/media-generation-buding-smile-v1style-0-09364d5e-f8ed-41ce-8eee-164ef5479b77-nobg.webp|dogs-expressions-loader/media-generation-buding-wink-0-46893ed0-7301-4a31-aeeb-86cf569f5ec5-nobg.webp|dogs-expressions-loader/media-generation-buding-tongue-0-be938d45-886a-4b05-85be-ff0a231db3dd-nobg.webp|dogs-expressions-loader/media-generation-buding-closed-eyes-0-0b9f4b08-1e71-4e8a-b62b-ed17c5036be4-nobg.webp" alt="布丁" draggable="false" style="--delay:-387ms"><img class="loader-dog" src="dogs-expressions-loader/media-generation-tangtang-smile-0-f89f9ace-217f-4198-9e9f-a8a601964cd5-nobg.webp" data-frames="dogs-expressions-loader/media-generation-tangtang-smile-0-f89f9ace-217f-4198-9e9f-a8a601964cd5-nobg.webp|dogs-expressions-loader/media-generation-tangtang-wink-0-b6b4d5eb-bc8e-447a-9df4-29007da7ae24-nobg.webp|dogs-expressions-loader/media-generation-tangtang-tongue-0-441231a2-7987-4435-af5f-f38284705caf-nobg.webp|dogs-expressions-loader/media-generation-tangtang-closed-eyes-0-d8b115cd-90ad-4ca4-bdef-83e9be7208a4-nobg.webp" alt="糖糖" draggable="false" style="--delay:-516ms"><img class="loader-dog" src="dogs-expressions-loader/media-generation-pipi-smile-0-1a592d46-7735-410e-837b-4f545891daeb-nobg.webp" data-frames="dogs-expressions-loader/media-generation-pipi-smile-0-1a592d46-7735-410e-837b-4f545891daeb-nobg.webp|dogs-expressions-loader/media-generation-pipi-wink-0-463f0ccd-a69d-4aa6-a2ec-792f15329578-nobg.webp|dogs-expressions-loader/media-generation-pipi-tongue-0-24c2ca57-5654-47b3-b0ee-0f28f171157a-nobg.webp|dogs-expressions-loader/media-generation-pipi-closed-eyes-0-ef131594-60a0-40b8-b08b-4915c24a85cf-nobg.webp" alt="皮皮" draggable="false" style="--delay:-645ms"><img class="loader-dog" src="dogs-expressions-loader/media-generation-hupo-smile-0-d751f6f6-fc32-4fdf-a1ae-433b5601b778-nobg.webp" data-frames="dogs-expressions-loader/media-generation-hupo-smile-0-d751f6f6-fc32-4fdf-a1ae-433b5601b778-nobg.webp|dogs-expressions-loader/media-generation-hupo-wink-0-a8bc7e0d-9a6a-4850-b52d-6ab41cafe2a8-nobg.webp|dogs-expressions-loader/media-generation-hupo-tongue-0-5bb8574d-d1f6-43cd-a8a3-c15306c67fd5-nobg.webp|dogs-expressions-loader/media-generation-hupo-closed-eyes-0-e4930dcc-dcd6-421e-b9a6-1e9892ea1c8b-nobg.webp" alt="琥珀" draggable="false" style="--delay:-774ms"><img class="loader-dog" src="dogs-expressions-loader/media-generation-yunduo-smile-0-0150a8d9-93cb-4769-a403-4911643e811e-nobg.webp" data-frames="dogs-expressions-loader/media-generation-yunduo-smile-0-0150a8d9-93cb-4769-a403-4911643e811e-nobg.webp|dogs-expressions-loader/media-generation-yunduo-wink-0-156f2fa6-79f7-4ad5-a6a2-19a45f25920e-nobg.webp|dogs-expressions-loader/media-generation-yunduo-tongue-0-b44a7c25-d612-46e3-a744-05d67f636ba7-nobg.webp|dogs-expressions-loader/media-generation-yunduo-closed-eyes-0-e874ab0a-d06f-44ef-97ad-0f11db4c3ff2-nobg.webp" alt="雲朵" draggable="false" style="--delay:-903ms"><img class="loader-dog" src="dogs-expressions-loader/media-generation-yuntun-smile-pinkcheeks-0-9c02c62e-c4a3-40a9-8d77-6aae599c13dc-nobg.webp" data-frames="dogs-expressions-loader/media-generation-yuntun-smile-pinkcheeks-0-9c02c62e-c4a3-40a9-8d77-6aae599c13dc-nobg.webp|dogs-expressions-loader/media-generation-yuntun-wink-pinkcheeks-0-b274380a-d302-4c40-b9b1-e3da143d2316-nobg.webp|dogs-expressions-loader/media-generation-yuntun-tongue-pinkcheeks-0-fbcced3a-dbd1-436c-9480-b123897a5030-nobg.webp|dogs-expressions-loader/media-generation-yuntun-closed-eyes-pinkcheeks-0-c06a8a85-02b8-4669-8a15-00e3f8c656e7-nobg.webp" alt="雲吞" draggable="false" style="--delay:-1032ms"><img class="loader-dog" src="dogs-expressions-loader/media-generation-naiyou-smile-v2-0-5513ab38-bd9f-4bbb-a713-5e74308b1d81-nobg.webp" data-frames="dogs-expressions-loader/media-generation-naiyou-smile-v2-0-5513ab38-bd9f-4bbb-a713-5e74308b1d81-nobg.webp|dogs-expressions-loader/media-generation-naiyou-wink-0-15b4ce91-168a-4e40-ba90-e6e4d2423d15-nobg.webp|dogs-expressions-loader/media-generation-naiyou-tongue-0-e5d77bbd-b5ce-4fb6-859d-a6f5f27061a6-nobg.webp|dogs-expressions-loader/media-generation-naiyou-closed-eyes-0-66f679e2-d90c-4ac3-bdc0-9dc70796a732-nobg.webp" alt="奶油" draggable="false" style="--delay:-1161ms"><img class="loader-dog" src="dogs-expressions-loader/media-generation-zhima-smile-0-2dc0a39f-e67d-4cf1-a0b7-101e64e3108f-nobg.webp" data-frames="dogs-expressions-loader/media-generation-zhima-smile-0-2dc0a39f-e67d-4cf1-a0b7-101e64e3108f-nobg.webp|dogs-expressions-loader/media-generation-zhima-wink-v2-0-446533bb-26fa-4be2-90b4-9c99697607d6-nobg.webp|dogs-expressions-loader/media-generation-zhima-tongue-0-e4771634-b193-46c1-bfc6-947884b05d96-nobg.webp|dogs-expressions-loader/media-generation-zhima-closed-eyes-0-709b0f0e-1f50-4ab0-9b22-b328f3a4aa3e-nobg.webp" alt="芝麻" draggable="false" style="--delay:-1290ms"><img class="loader-dog" src="dogs-expressions-loader/media-generation-xueqiu-smile-v2-0-68861154-bbca-484e-a3a7-d7ebd7458ffb-nobg.webp" data-frames="dogs-expressions-loader/media-generation-xueqiu-smile-v2-0-68861154-bbca-484e-a3a7-d7ebd7458ffb-nobg.webp|dogs-expressions-loader/media-generation-xueqiu-wink-0-712a0584-a03d-4792-af33-ef92adaeb3eb-nobg.webp|dogs-expressions-loader/media-generation-xueqiu-tongue-0-e9cdb183-83a7-43e8-b846-6bbf56ce84d7-nobg.webp|dogs-expressions-loader/media-generation-xueqiu-closed-eyes-0-ce320fb3-fa07-4455-9653-ccc4f1166c7e-nobg.webp" alt="雪球" draggable="false" style="--delay:-1419ms"><img class="loader-dog" src="dogs-expressions-loader/media-generation-maomao-smile-0-5528dd02-955e-4a32-aa4d-9150ae08f3e7-nobg.webp" data-frames="dogs-expressions-loader/media-generation-maomao-smile-0-5528dd02-955e-4a32-aa4d-9150ae08f3e7-nobg.webp|dogs-expressions-loader/media-generation-maomao-wink-0-b0ca5f14-7991-46f6-8cfe-3266f7e36603-nobg.webp|dogs-expressions-loader/media-generation-maomao-tongue-0-584d31bd-db72-4bbe-be67-87ea1539ec82-nobg.webp|dogs-expressions-loader/media-generation-maomao-closed-eyes-v2-0-eecfab9f-85a3-41a7-b33d-a48e98542ed4-nobg.webp" alt="毛毛" draggable="false" style="--delay:-1548ms"><img class="loader-dog" src="dogs-expressions-loader/media-generation-bobi-smile-v6-0-6239dcff-ef77-46bb-a3b7-ee726a4e535e-nobg.webp" data-frames="dogs-expressions-loader/media-generation-bobi-smile-v6-0-6239dcff-ef77-46bb-a3b7-ee726a4e535e-nobg.webp|dogs-expressions-loader/media-generation-bobi-wink-0-76207f4e-5bba-48e8-b7ec-c634b36b85a3-nobg.webp|dogs-expressions-loader/media-generation-bobi-tongue-0-90b7fb55-489d-41c0-a893-068f7f9fb4b8-nobg.webp|dogs-expressions-loader/media-generation-bobi-closed-eyes-0-1d2ddd60-db5e-4a27-adeb-9754ab80f2ce-nobg.webp" alt="波比" draggable="false" style="--delay:-1677ms"></div><div class="momentum-loader-label">載入中<span class="momentum-loader-dots"></span></div><div class="momentum-loader-note">狗狗店員正在準備迎接你</div></div></div><script>
+    (function(){
+      var dogs=document.querySelectorAll('#momentum-loading-screen .loader-dog');
+      if(!dogs.length)return;
+      var frames=[];
+      var preloads=[];
+      var order=[0,1,2,3,2,1];
+      for(var i=0;i<dogs.length;i++){
+        var list=(dogs[i].getAttribute('data-frames')||'').split('|');
+        frames.push(list);
+        for(var j=0;j<list.length;j++){
+          (function(src){
+            preloads.push(new Promise(function(resolve){
+              var image=new Image();
+              var settled=false;
+              var finish=function(){
+                if(settled)return;
+                settled=true;
+                if(typeof image.decode==='function'){
+                  image.decode().catch(function(){}).then(resolve);
+                }else resolve();
+              };
+              image.onload=finish;
+              image.onerror=resolve;
+              image.src=src;
+              if(image.complete)finish();
+            }));
+          })(list[j]);
+        }
+      }
+      var step=0;
+      Promise.all(preloads).then(function(){
+        if(!document.getElementById('momentum-loading-screen'))return;
+        window.setInterval(function(){
+          step=(step+1)%order.length;
+          var frame=order[step];
+          for(var k=0;k<dogs.length;k++){
+            var src=frames[k][frame];
+            var dog=dogs[k];
+            if(src&&dog.getAttribute('src')!==src){
+              dog.style.opacity='0';
+              window.setTimeout(function(target,imageSrc){
+                return function(){target.setAttribute('src',imageSrc);target.style.opacity='1';};
+              }(dog,src),80);
+            }
+          }
+        },300);
+      });
+    })();
+  </script>
+<div id="root"></div>
+<script>
+    (function(){
+      var screen=document.getElementById("momentum-loading-screen");
+      var root=document.getElementById("root");
+      if(!screen||!root)return;
+      var hide=function(){
+        if(root.childNodes.length){
+          screen.classList.add("is-hidden");
+          window.setTimeout(function(){screen.remove()},450);
+          return true;
+        }
+        return false;
+      };
+      if(hide())return;
+      var observer=new MutationObserver(function(){if(hide()){observer.disconnect()}});
+      observer.observe(root,{childList:true,subtree:true});
+      window.addEventListener("pageshow",hide,{once:true});
+    })();
+  </script>
+  <script src="/_expo/static/js/web/entry-919541cc04b4649d0c92697c91c13274.js" defer></script>
+</body>
+</html>
